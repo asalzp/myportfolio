@@ -20,7 +20,6 @@ function About() {
     <div className="section-container">
       
       <div className='skills'>
-        {/* <img src='/images/brush_stroke.png' alt="brush_troke"></img> */}
         <h1>I am skilled in</h1>
         
         <div className='skills-items'>
@@ -45,17 +44,17 @@ function About() {
       </div>
       <div className='skills_images'>
         <div className={`python_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/python.jpg' alt='python'></img>
+          <img src='images/python.jpg' alt='python'></img>
         </div>
         <div className={`java_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/java.jpg' alt='java'></img>
+          <img src='images/java.jpg' alt='java'></img>
         </div>
         
         <div className={`multitasking_img ${hoveredButton === 'multitasking' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/multitasking.jpg' alt='multitasking'></img>
+          <img src='images/multitasking.jpg' alt='multitasking'></img>
         </div>
         <div className={`teamwork_img ${hoveredButton === 'teamwork' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/teamwork.jpg' alt='teamwork'></img>
+          <img src='images/teamwork.jpg' alt='teamwork'></img>
         </div>
 
       </div>
@@ -86,13 +85,13 @@ function About() {
 
       <div className='likes_images'>
         <div className={`guitar_img ${hoveredButton === 'guitar' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/guitar.jpg' alt='guitar'></img>
+          <img src='images/guitar.jpg' alt='guitar'></img>
         </div>
         <div className={`books_img ${hoveredButton === 'books' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/books.jpg' alt='books'></img>
+          <img src='images/books.jpg' alt='books'></img>
         </div>
         <div className={`baking_img ${hoveredButton === 'baking' ? 'heartbeat' : 'hidden'}`}>
-          <img src='/images/baking.jpg' alt='baking'></img>
+          <img src='images/baking.jpg' alt='baking'></img>
         </div>
 
       </div>

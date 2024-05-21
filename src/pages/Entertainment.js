@@ -27,12 +27,12 @@ function Entertainment() {
       <div className="images neon-border">
 
         <div className="movies_img neon-border" onClick={openMovies}>
-          <img src="/images/movies.jpg" alt="movies"></img>
+          <img src="images/movies.jpg" alt="movies"></img>
           <div className="text-movies"><p>Top 10 Movies Everyone Should Watch</p></div>
         </div>
       
         <div className="music_img neon-border" onClick={openSpotify}>
-          <img src="/images/music.jpg" alt="music"></img>
+          <img src="images/music.jpg" alt="music"></img>
           <div class="text-music">Spotify Playlist for House Music Lovers</div>
         </div>
 
