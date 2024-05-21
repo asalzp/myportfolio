@@ -83,7 +83,7 @@ p{
     cursor: pointer;
 }
 
-.text-movies, .text-music{
+.text-movies p, .text-music{
     position: absolute;
     color: white;
     font-family: monospace;
