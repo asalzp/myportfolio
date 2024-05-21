@@ -18,18 +18,22 @@ html, body {
 }
 
 .contact-title{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 42%;
     padding-top: 15rem;
 }
 
 .contact-items{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 7rem;
-    margin-left: -5rem;
+    left: 40%;
+    top: 30%;
 }
 
 li{
@@ -53,3 +57,20 @@ li{
     color: black;
 }
 
+
+@media screen and (max-width: 768px) {
+
+    .contact-title{
+        position: absolute;
+        display: flex;
+        top: 5%;
+        left: 30%;
+    }
+    
+    .contact-items{
+        position: absolute;
+        display: flex;
+        top: 35%;
+        left: 17%;
+    }
+}
