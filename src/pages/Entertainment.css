@@ -18,16 +18,21 @@ html, body {
 }
 
 .page_title{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 25%;
     padding-top: 8rem;
 }
 
 .page_info{
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
+    left: 25%;
+    top: 17%;
     padding-top: 2rem;
 }
 
@@ -41,7 +46,7 @@ p{
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     margin-left: 15rem;
-    margin-top: 5rem;
+    margin-top: 20rem;
 }
 
 .music_img{
@@ -83,7 +88,7 @@ p{
     cursor: pointer;
 }
 
-.text-movies p, .text-music{
+.text-movies, .text-music{
     position: absolute;
     color: white;
     font-family: monospace;
@@ -96,14 +101,26 @@ p{
     left: 8%;
 }
 
+.text-movies p{
+    color: white;
+}
+
 
 @media screen and (max-width: 768px){
     .page_title{
+        position: absolute;
         text-align: center;
+        display: flex;
+        top: 1%;
+        left: 1%;
     }
 
     .page_info{
+        position: absolute;
         text-align: center;
+        display: flex;
+        top: 22%;
+        left: 1%;
         width: 100%;
     }
 
@@ -114,6 +131,7 @@ p{
     .images{
         display: flex;
         flex-direction: column;
+        position: absolute;
         width: 50px;
     }
 
@@ -122,26 +140,27 @@ p{
     }
 
     .movies_img{
-        margin-left: -8rem;
-        margin-top: -3rem;
+        position: absolute;
+        display: flex;
+        margin-left: -15rem;
+        top: -16rem;
     }
 
     .music_img{
-        margin-left: -8rem;
-        margin-top: 32rem;
+        position: absolute;
+        display: flex;
+        margin-left: -15rem;
+        margin-top: 16rem;
     }
 
     .text-movies{
-        font-size: 20px;
         text-align: center;
-        margin-left: -9rem;
-        margin-top: -4rem;
-
+        width: 130%;
+        margin-left: -2rem;
+        margin-top: -1rem;
     }
 
     .text-movies p{
-        color: white;
-        width: 110%;
         font-size: 18px;
     }
 

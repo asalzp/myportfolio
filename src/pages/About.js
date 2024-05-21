@@ -43,8 +43,10 @@ function About() {
         </div>
       </div>
       <div className='skills_images'>
+        <div className='container'>
         <div className={`python_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
           <img src='images/python.jpg' alt='python'></img>
+        </div>
         </div>
         <div className={`java_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
           <img src='images/java.jpg' alt='java'></img>

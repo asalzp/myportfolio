@@ -108,20 +108,34 @@ h1{
 
 @media screen and (max-width: 768px){
     .title{
-        margin-left: 8rem;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        left: 20%;
     }
     .layer1{
         background-image: none;
     } 
 
     .left-blob{
-        margin-left: -5rem;
-        margin-top: 5rem;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        left: 70%;
     }
 
     .right-blob{
-        margin-left: -1rem;
-        margin-top: 25rem;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 55%;
+        margin: 0;
     }
 
     .blob_itself {
