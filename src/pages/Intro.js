@@ -14,9 +14,9 @@ function Intro() {
         <p>A Developer</p>
         <div className='quote'>
           <p>"Python approach: They'll lie in wait for the right moment to strike."</p>
-        </div>
-        <div className='quote_author'>
-          <p>Mr. Robot</p>
+          <div className='author'>
+          <p >-Mr. Robot</p>
+          </div>
         </div>
       </div>
 

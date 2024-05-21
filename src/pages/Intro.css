@@ -44,9 +44,11 @@ html, body {
   font-style: italic;
 }
 
-.quote_author{
+.author{
   font-size: 15px;
-  margin-left: 31rem;
+  position: absolute;
+  left: 85%;
+  width: 100%;
 }
 
 .quote_author p{
@@ -175,51 +177,85 @@ p{
 }
 
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
   .introduction {
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: -15rem;
-    margin-top: 12rem;
-  }
-  
-  .my_pic{
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    margin-top: 8.5rem;
-  }
-
-
-  .big_hexagon{
-    display: flex;
-    flex-direction: column;
-    margin-top: -7rem;
-    margin-left: 5.5rem;
-    width: 50%;
-    font-size: 400px;
-  }
-
-  .my_pic img{
-    width: 300px;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    left: 60%; /* Move to the horizontal center */
+    top: 65%;
+    transform: translate(-50%, -50%); /* Offset by half the element's size to truly center */
   }
 
   .my_name{
-    text-align: center;
-    font-size: 40px;
+    position: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -13rem;
-    margin-top: 3rem;
+    left: 15%;
+    font-size: 30px;
+  }
+
+  .introduction p{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    margin-top: 2rem;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .quote p{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 40%;
+    width: 80%;
+    margin-top: 7rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .author{
+    position: absolute;
+    display: flex;
+    margin-top: 5rem ;
+    left: 50%;
+    width: 100%;
   }
   
-  .introduction p{
+
+
+  .big_hexagon{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: -4rem;
-    text-align: center;
+    top: 11%;
+    left: 6%;
+    margin: 0;
+    width: 100%;
+    font-size: 320px;
   }
+
+  .my_pic{
+    position: absolute;
+    display: flex;
+    left: 65%;
+    top: 33%;
+    width: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+  .my_pic img{
+    width: 250px;
+  }
+
+
+
   /* Adjust other elements as needed */
 
   .triple_hexagon_1,
