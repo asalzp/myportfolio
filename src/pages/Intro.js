@@ -25,7 +25,7 @@ function Intro() {
       </div>
 
       <div className='my_pic'>
-        <img src='/images/my_pic.jpg' alt='my_pic'></img>
+        <img src='images/my_pic.jpg' alt='my_pic'></img>
       </div>
       
       <div className="triple_hexagon_1">
