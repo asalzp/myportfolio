@@ -114,6 +114,11 @@ h1{
         transform: translate(-50%, -50%);
         width: 100%;
         left: 20%;
+        margin-top: 7rem;
+    }
+
+    .title h1{
+        font-size: 20px;
     }
     .layer1{
         background-image: none;
@@ -125,7 +130,8 @@ h1{
         align-items: center;
         transform: translate(-50%, -50%);
         width: 100%;
-        left: 70%;
+        left: 85%;
+        margin-top: 18rem;
     }
 
     .right-blob{
@@ -133,7 +139,7 @@ h1{
         justify-content: center;
         align-items: center;
         transform: translate(-50%, -50%);
-        left: 50%;
+        left: 55%;
         top: 55%;
         margin: 0;
     }
@@ -154,7 +160,7 @@ h1{
       }
 
     svg{
-        width: 500px;
+        width: 400px;
     }
 
 }

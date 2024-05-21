@@ -63,14 +63,14 @@ li{
     .contact-title{
         position: absolute;
         display: flex;
-        top: 5%;
+        top: -12%;
         left: 30%;
     }
     
     .contact-items{
         position: absolute;
         display: flex;
-        top: 35%;
+        top: 20%;
         left: 17%;
     }
 }

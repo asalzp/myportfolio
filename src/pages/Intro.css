@@ -78,6 +78,10 @@ p{
   margin-top: 10rem;
 }
 
+.my_pic2{
+  display: none;
+}
+
 .my_pic img{
   border-radius: 3px;
   width: 550px;
@@ -176,8 +180,7 @@ p{
   transform: scaleX(-1);
 }
 
-
-@media only screen and (max-width: 768px){
+@media (min-width: 381px) and (max-width: 768px){
   .introduction {
     position: absolute;
     width: 100%;
@@ -231,27 +234,116 @@ p{
 
 
   .big_hexagon{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 11%;
-    left: 6%;
-    margin: 0;
-    width: 100%;
-    font-size: 320px;
+    display: none !important;
+    
   }
 
-  .my_pic{
+  .my_pic2{
+    display: flex !important;
     position: absolute;
     display: flex;
-    left: 65%;
+    left: 45%;
     top: 33%;
     width: 100%;
     margin: 0;
     transform: translate(-50%, -50%);
   }
-  .my_pic img{
-    width: 250px;
+
+  .my_pic{
+    display: none;
+  }
+  .my_pic2 img{
+    width: 450px;
+  }
+
+
+
+  /* Adjust other elements as needed */
+
+  .triple_hexagon_1,
+  .triple_hexagon_2,
+  .triple_hexagon_3,
+  .double_hexagon_1,
+  .double_hexagon_2,
+  .double_hexagon_3,
+  .double_hexagon_4 {
+    display: none; /* Hide the hexagon patterns on smaller screens */
+  }
+
+}
+
+@media (max-width: 380px){
+  .introduction {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    left: 60%; /* Move to the horizontal center */
+    top: 65%;
+    transform: translate(-50%, -50%); /* Offset by half the element's size to truly center */
+  }
+
+  .my_name{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 15%;
+    font-size: 30px;
+  }
+
+  .introduction p{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    margin-top: 2rem;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .quote p{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 40%;
+    width: 80%;
+    margin-top: 7rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .author{
+    position: absolute;
+    display: flex;
+    margin-top: 5rem ;
+    left: 50%;
+    width: 100%;
+  }
+  
+
+
+  .big_hexagon{
+    display: none;
+  }
+
+  .my_pic{
+    display: none;
+  }
+  .my_pic2{
+    display: flex !important;
+    position: absolute;
+    display: flex;
+    left: 45%;
+    top: 33%;
+    width: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+  .my_pic2 img{
+    width: 400px;
   }
 
 

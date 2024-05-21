@@ -111,21 +111,26 @@ p{
         position: absolute;
         text-align: center;
         display: flex;
-        top: 1%;
+        top: -7%;
         left: 1%;
+    }
+
+    .page_title h1{
+        font-size: 20px;
     }
 
     .page_info{
         position: absolute;
         text-align: center;
         display: flex;
-        top: 22%;
+        top: 17%;
         left: 1%;
         width: 100%;
     }
 
-    p{
+    .page_info p{
         width: 80%;
+        font-size: 15px;
     }
 
     .images{
@@ -136,38 +141,38 @@ p{
     }
 
     .music_img img, .movies_img img{
-        width: 250px;
+        width: 200px;
     }
 
     .movies_img{
         position: absolute;
         display: flex;
         margin-left: -15rem;
-        top: -16rem;
+        top: -17rem;
     }
 
     .music_img{
         position: absolute;
         display: flex;
         margin-left: -15rem;
-        margin-top: 16rem;
+        margin-top: 5rem;
     }
 
     .text-movies{
         text-align: center;
-        width: 130%;
-        margin-left: -2rem;
+        width: 90%;
+        margin-left: -1rem;
         margin-top: -1rem;
     }
 
     .text-movies p{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .text-music{
         text-align: center;
-        font-size: 18px;
-        margin-left: -0.5rem;
+        font-size: 15px;
+        margin-left: -1rem;
         margin-top: -0.5rem;
     }
 }

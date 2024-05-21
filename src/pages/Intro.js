@@ -27,6 +27,9 @@ function Intro() {
       <div className='my_pic'>
         <img src='images/my_pic.jpg' alt='my_pic'></img>
       </div>
+      <div className='my_pic2'>
+        <img src='images/mypic_bg.png' alt='my_pic'></img>
+      </div>
       
       <div className="triple_hexagon_1">
         <div class="vertical-line"></div>
