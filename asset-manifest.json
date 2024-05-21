@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.c4fdc8fd.css",
+    "main.css": "/myportfolio/static/css/main.3f06ad2f.css",
     "main.js": "/myportfolio/static/js/main.c81e7916.js",
     "static/js/206.bf51703e.chunk.js": "/myportfolio/static/js/206.bf51703e.chunk.js",
     "static/media/bootstrap-icons.woff?": "/myportfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
@@ -9,7 +9,7 @@
     "static/media/svg_bg2.svg": "/myportfolio/static/media/svg_bg2.f94a02ada40bc205cbf9.svg"
   },
   "entrypoints": [
-    "static/css/main.c4fdc8fd.css",
+    "static/css/main.3f06ad2f.css",
     "static/js/main.c81e7916.js"
   ]
 }
