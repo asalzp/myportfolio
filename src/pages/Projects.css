@@ -57,14 +57,15 @@ h1{
     margin-top: 5rem;
 }
 
-.blob_itself{
+.blob_itself, .blob_itself2{
     cursor: pointer;
 
 }
     
-.mygame-txt{
-    margin-top: 10rem;
-}
+
+
+
+
 
 /* .controller_img{
     position: absolute;
@@ -144,10 +145,14 @@ h1{
         margin: 0;
     }
 
-    .blob_itself {
+    .blob_itself, .blob_itself2 {
         fill: #1e1d1d; /* Default color */
         transform: rotate(90deg);
+        pointer-events: all !important;
         
+      }
+      #visual {
+        pointer-events: all; /* Ensure pointer events are enabled */
       }
       
 
@@ -162,6 +167,8 @@ h1{
     svg{
         width: 400px;
     }
+
+    
 
 }
 

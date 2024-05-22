@@ -25,6 +25,33 @@ function Project() {
     window.open('https://asalzp.github.io/slide.html', '_blank')
   }
 
+  const openCalendarApp = () => {
+    window.open('https://github.com/asalzp/calendarapp', '_blank')
+  }
+
+  useEffect(() => {
+    const blobElement1 = document.querySelector('.blob_itself');
+    const blobElement2 = document.querySelector('.blob_itself');
+    
+
+    if (blobElement1) {
+      blobElement1.addEventListener('click', openGame);
+    }
+
+    if (blobElement2) {
+      blobElement2.addEventListener('click', openCalendarApp);
+    }
+
+    return () => {
+      if (blobElement1) {
+        blobElement1.removeEventListener('click', openGame);
+      }
+      if (blobElement2) {
+        blobElement2.removeEventListener('click', openCalendarApp);
+      }
+    };
+  }, []);
+
   return (
     <div className="section_container">
       <div className="title">
@@ -56,7 +83,7 @@ function Project() {
                 fill="#e4e2e2"
               />
             </g>
-            <text className="game-text"
+            <text  className="game-text"
               style={{
                 fontFamily: "monospace",
                 fontSize: "28px",
@@ -83,7 +110,7 @@ function Project() {
             <defs />
             
             <g transform="translate(414.8630586732182 307.1500272025332)" >
-              <path className="blob_itself"
+              <path className="blob_itself2"
                id="blob2-right"
                 d="M190.9 -168.4C240.4 -141.4 268.7 -70.7 258.2 -10.5C247.7 49.7 198.5 99.5 149 130.5C99.5 161.5 49.7 173.7 7.2 166.5C-35.4 159.4 -70.7 132.7 -108.4 101.7C-146 70.7 -186 35.4 -189.8 -3.8C-193.6 -42.9 -161.1 -85.8 -123.5 -112.8C-85.8 -139.8 -42.9 -150.9 13.9 -164.8C70.7 -178.7 141.4 -195.4 190.9 -168.4"
                 fill="#e4e2e2"
@@ -92,7 +119,7 @@ function Project() {
             <g transform="translate(491.9400486868151 297.3234330424008)" style={{visibility:"hidden"}}>
               <path
               
-              onClick={openGame} 
+              onClick={openCalendarApp} 
                 id="blob1-right"
                 d="M149.9 -164.4C174.9 -124.9 162.5 -62.5 151.5 -11C140.5 40.5 131.1 81.1 106.1 125.7C81.1 170.4 40.5 219.2 -2.1 221.3C-44.8 223.5 -89.6 178.9 -139.6 134.2C-189.6 89.6 -244.8 44.8 -248.2 -3.4C-251.6 -51.6 -203.2 -103.2 -153.2 -142.7C-103.2 -182.2 -51.6 -209.6 5.4 -215C62.5 -220.5 124.9 -203.9 149.9 -164.4"
                 fill="#e4e2e2"
