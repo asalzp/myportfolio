@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     background-color: #e4e2e2;
+    max-width: 100%;
 }
   
 .section-container {
@@ -47,6 +48,7 @@ p{
     align-items: center; /* Vertically center the content */
     margin-left: 15rem;
     margin-top: 20rem;
+    
 }
 
 .music_img{
@@ -58,6 +60,7 @@ p{
     width: 500px;
     border-radius: 20px;
     transition: opacity 0.3s ease;
+    
 }
 
 .neon-border {
@@ -112,7 +115,7 @@ p{
         text-align: center;
         display: flex;
         top: -7%;
-        left: 1%;
+        left: 3%;
     }
 
     .page_title h1{

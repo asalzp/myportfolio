@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Project from "./pages/Projects";
 import Entertainment from "./pages/Entertainment";
 import Contact from "./pages/Contact";
+import { Link } from "react-scroll";
 
 function App() {
   return (
@@ -25,27 +26,27 @@ function App() {
         <div className="collapse navbar-collapse navbar-items" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/myportfolio/">
+              <a className="nav-link" href="#home">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/myportfolio/about">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/myportfolio/projects">
+              <a className="nav-link" href="#projects">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/myportfolio/entertainment">
+              <a className="nav-link" href="#entertainment">
                 Entertainment
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/myportfolio/contact">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

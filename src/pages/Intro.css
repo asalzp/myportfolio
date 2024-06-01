@@ -7,6 +7,8 @@
 html, body {
   height: 100%;
   background-color: #e4e2e2;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .section1-container {
@@ -181,7 +183,11 @@ p{
 }
 
 @media (min-width: 381px) and (max-width: 768px){
+
   .introduction {
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
     position: absolute;
     width: 100%;
     display: flex;
@@ -205,28 +211,29 @@ p{
   .introduction p{
     position: absolute;
     display: flex;
-    top: 100%;
-    margin-top: 2rem;
-    left: 60%;
+    top: 55%;
+    left: 35%;
     transform: translate(-50%, -50%);
+
   }
 
 
   .quote p{
     position: absolute;
     display: flex;
-    top: 100%;
+    top: 63%;
     left: 40%;
     width: 80%;
-    margin-top: 7rem;
     text-align: center;
     transform: translate(-50%, -50%);
+    color: black;
   }
+
 
   .author{
     position: absolute;
     display: flex;
-    margin-top: 5rem ;
+    top: 70% ;
     left: 50%;
     width: 100%;
   }
@@ -273,6 +280,10 @@ p{
 }
 
 @media (max-width: 380px){
+  html, body{
+    overflow-x: hidden;
+    position: relative;
+  }
   .introduction {
     position: absolute;
     width: 100%;
@@ -299,7 +310,7 @@ p{
     display: flex;
     top: 100%;
     margin-top: 2rem;
-    left: 60%;
+    left: 35%;
     transform: translate(-50%, -50%);
   }
 

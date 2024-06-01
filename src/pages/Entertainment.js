@@ -15,7 +15,7 @@ function Entertainment() {
   };
 
   return (
-    <div className="section-container">
+    <div id="entertainment" className="section-container">
       <div className="page_title">
         <h1>Welcome to The Wall of Entertainment!</h1>
       </div>

@@ -17,7 +17,7 @@ function About() {
   };
 
   return (
-    <div className="section-container">
+    <div id='about' className="section-container">
       
       <div className='skills'>
         <h1>I am skilled in</h1>

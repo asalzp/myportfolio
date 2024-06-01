@@ -9,11 +9,12 @@ html, body {
     background-color: #e4e2e2;
   }
   
-.section-container {
+.section_container {
     position: relative;
     padding: 0;
     min-height: 100vh; /* Ensure Section1 covers the entire viewport */
     box-sizing: border-box;
+    overflow: hidden;
   
 }
 
@@ -26,16 +27,19 @@ html, body {
     
 }
 
-.layer1{
+/* .layer1{
     background-image: url('../../public/images/svg_bg2.svg');
-} 
+}  */
 
 
 
 .title{
     position: absolute;
-    margin-top: 7rem;
-    margin-left: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 40%;
+    padding-top: 8rem;
 
 }
 
@@ -47,14 +51,30 @@ h1{
 
 .left-blob{
     position: absolute;
-    margin-top: 20rem;
-    margin-left: -10rem;
+    margin-top: 13rem;
+    margin-left: -8rem;
+    max-width: 100%;
 }
 
 .right-blob{
     position: absolute;
-    margin-left: 55rem;
-    margin-top: 5rem;
+    margin-left: 42rem;
+    margin-top: 10rem;
+    max-width: 100%;
+}
+
+.middle-blob{
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: 30rem;
+    max-width: 100%;
+}
+
+.last-blob{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 30rem;
+    max-width: 100%;
 }
 
 .blob_itself, .blob_itself2{
@@ -108,14 +128,15 @@ h1{
 } */
 
 @media screen and (max-width: 768px){
+    
     .title{
         position: absolute;
         justify-content: center;
         align-items: center;
         transform: translate(-50%, -50%);
         width: 100%;
-        left: 20%;
-        margin-top: 7rem;
+        left: 50%;
+        margin-top: 10%;
     }
 
     .title h1{
@@ -131,41 +152,63 @@ h1{
         align-items: center;
         transform: translate(-50%, -50%);
         width: 100%;
-        left: 85%;
-        margin-top: 18rem;
-    }
+        left: 70%;
+        margin-top: 75%;
+    } 
 
-    .right-blob{
+     .right-blob{
         position: absolute;
         justify-content: center;
         align-items: center;
         transform: translate(-50%, -50%);
-        left: 55%;
-        top: 55%;
+        left: 75%;
+        top: 50%;
         margin: 0;
     }
 
+    .middle-blob{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        left: 30%;
+        top: 70%;
+        margin: 0;
+    }
+
+    .last-blob{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        left: 75%;
+        top: 80%;
+        margin: 0;
+    }
+
+
+
     .blob_itself, .blob_itself2 {
-        fill: #1e1d1d; /* Default color */
+        fill: #1e1d1d; 
         transform: rotate(90deg);
         pointer-events: all !important;
         
       }
       #visual {
-        pointer-events: all; /* Ensure pointer events are enabled */
+        pointer-events: all; 
       }
       
 
       text {
-        fill: #e4e2e2; /* Change color of the text */
+        fill: #e4e2e2;
       }
       
       tspan {
-        fill: #e4e2e2; /* Change color of the text */
+        fill: #e4e2e2;
       }
 
     svg{
-        width: 400px;
+        width: 300px;
     }
 
     
