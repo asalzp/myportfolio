@@ -25,27 +25,27 @@ function App() {
         <div className="collapse navbar-collapse navbar-items" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="/myportfolio/">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="/myportfolio/about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
+              <a className="nav-link" href="/myportfolio/projects">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/entertainment">
+              <a className="nav-link" href="/myportfolio/entertainment">
                 Entertainment
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="/myportfolio/contact">
                 Contact
               </a>
             </li>
@@ -53,11 +53,11 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/entertainment" element={<Entertainment />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/myportfolio/" element={<Home />} />
+        <Route path="/myportfolio/about" element={<About />} />
+        <Route path="/myportfolio/entertainment" element={<Entertainment />} />
+        <Route path="/myportfolio/projects" element={<Project />} />
+        <Route path="/myportfolio/contact" element={<Contact />} />
       </Routes>
     </>
   );
