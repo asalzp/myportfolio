@@ -1,9 +1,7 @@
 // SecondPage.js
-import React, { useState }  from 'react';
-import './About.css'; // Importing the corresponding CSS file
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
-
+import React, { useState } from "react";
+import "./About.css"; // Importing the corresponding CSS file
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function About() {
   const [hoveredButton, setHoveredButton] = useState(null);
@@ -17,51 +15,139 @@ function About() {
   };
 
   return (
-    <div id='about' className="section-container">
-      
-      <div className='skills'>
+    <div id="about" className="section-container">
+      <div className="summary">
+        <p>
+          Hey there! 👋 I'm Asal, a full-stack developer passionate about
+          turning coffee into code. <br /> With experience in both front-end and
+          back-end, I craft dynamic web apps and robust APIs. When I'm not
+          coding, I'm exploring nature, baking pies, or diving into a good read. <br />
+          Ready to tackle any challenge? <a href="mailto:azrepakziab@mun.ca">Let's chat!</a> 🚀
+        </p>
+      </div>
+
+      <div className="skills">
         <h1>I am skilled in</h1>
-        
-        <div className='skills-items'>
-            <ul>
-              <li>
-              <button onMouseEnter={() => handleHover('python')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Different programming languages</button>
-              </li>
-              <li>
-              <button onMouseEnter={() => handleHover('teamwork')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Teamwork</button>
-              </li>
-              <li>
-              <button onMouseEnter={() => handleHover('multitasking')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Multitasking</button>
-              </li>
-            </ul>
+
+        <div className="skills-items">
+          <ul>
+            <li>
+              <button
+                onMouseEnter={() => handleHover("webdev")}
+                onMouseLeave={handleHoverOut}
+                type="button"
+                class="btn btn-rect-to-round btn-rect-to-round--black"
+              >
+                Web Development
+              </button>
+            </li>
+            <li>
+              <button
+                onMouseEnter={() => handleHover("languages")}
+                onMouseLeave={handleHoverOut}
+                type="button"
+                class="btn btn-rect-to-round btn-rect-to-round--black"
+              >
+                Programming Languages
+              </button>
+            </li>
+            <li>
+              <button
+                onMouseEnter={() => handleHover("frameworks")}
+                onMouseLeave={handleHoverOut}
+                type="button"
+                class="btn btn-rect-to-round btn-rect-to-round--black"
+              >
+                Frameworks and Tools
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className='skills_images'>
-        <div className='container'>
-        <div className={`python_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/python.jpg' alt='python'></img>
-        </div>
-        </div>
-        <div className={`java_img ${hoveredButton === 'python' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/java.jpg' alt='java'></img>
-        </div>
-        
-        <div className={`multitasking_img ${hoveredButton === 'multitasking' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/multitasking.jpg' alt='multitasking'></img>
-        </div>
-        <div className={`teamwork_img ${hoveredButton === 'teamwork' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/teamwork.jpg' alt='teamwork'></img>
+      <div className="skills-details">
+        <div
+          className={`webdev-details ${
+            hoveredButton === "webdev" ? "heartbeat" : "hidden"
+          }`}
+        >
+          <ul>
+            <li>
+              <p>TypeScript</p>
+            </li>
+            <li>
+              <p>HTML/CSS</p>
+            </li>
+            <li>
+              <p>React</p>
+            </li>
+            <li>
+              <p>Vue3</p>
+            </li>
+            <li>
+              <p>Node.js</p>
+            </li>
+          </ul>
         </div>
 
+        <div
+          className={`languages-details ${
+            hoveredButton === "languages" ? "heartbeat" : "hidden"
+          }`}
+        >
+          <ul>
+            <li>
+              <p>Python</p>
+            </li>
+            <li>
+              <p>R</p>
+            </li>
+            <li>
+              <p>Java</p>
+            </li>
+            <li>
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <p>C/C#</p>
+            </li>
+            <li>
+              <p>Dart</p>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          className={`frameworks-details ${
+            hoveredButton === "frameworks" ? "heartbeat" : "hidden"
+          }`}
+        >
+          <ul>
+            <li>
+              <p>Spring Boot</p>
+            </li>
+            <li>
+              <p>Bootstrap</p>
+            </li>
+            <li>
+              <p>Flutter</p>
+            </li>
+            <li>
+              <p>Unity</p>
+            </li>
+            <li>
+              <p>MongoDB</p>
+            </li>
+            <li>
+              <p>Firebase</p>
+            </li>
+            <li>
+              <p>NoSQL</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className='likes'>
-        {/* <img src='/images/brush_stroke.png' alt='brush_stroke'></img> */}
+
+      {/* <div className='likes'>
         <h1>I like</h1>
 
         <div className='likes-items'>
@@ -96,7 +182,7 @@ function About() {
           <img src='images/baking.jpg' alt='baking'></img>
         </div>
 
-      </div>
+      </div> */}
     </div>
   );
 }

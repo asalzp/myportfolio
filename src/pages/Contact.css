@@ -36,6 +36,11 @@ html, body {
     top: 30%;
 }
 
+.contact-items ul{
+    display: flex;
+    flex-direction: column;
+}
+
 li{
     
     margin-top: 2rem;
