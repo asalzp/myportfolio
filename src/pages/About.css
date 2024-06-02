@@ -198,18 +198,18 @@ ul{
     }
 
     .summary p{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .skills h1{
-        font-size: 18px;
-        top: 15%;
+        font-size: 15px;
+        top: 20%;
         left: 40%;
     }
 
     .skills{
-        top: 50%;
-        left: 5%;
+        top: 45%;
+        left: 3%;
     }
 
     .skills-items ul{
@@ -222,9 +222,13 @@ ul{
         padding: 0.1rem;
     }
     .skills-items button{
-        font-size: 16px;
-        padding: 0.5rem;
+        font-size: 13px;
         
+        
+    }
+
+    .skills-items li button{
+        height: 45px;
     }
 
    
@@ -245,13 +249,13 @@ ul{
     }
 
     .skills-details p{
-        font-size: 16px
+        font-size: 12px
     }
 
 
     .webdev-details, .languages-details, .frameworks-details{
-        top: 85%;
-        left: 15%;
+        top: 77%;
+        left: 12%;
     }
 
    
@@ -290,13 +294,11 @@ ul{
         left: 5%;
     }
 
-    .skills-items li{
-        padding: 0.1rem;
-    }
-    .skills-items button{
-        font-size: 15px;
-        padding: 0.5rem;
-        
+    
+    .skills-items li button{
+        font-size: 12px;
+        height: 45px;
+        margin-top: -1rem;
     }
 
    
@@ -317,13 +319,13 @@ ul{
     }
 
     .skills-details p{
-        font-size: 16px
+        font-size: 12px
     }
 
 
     .webdev-details, .languages-details, .frameworks-details{
-        top: 76%;
-        left: 8%;
+        top: 70%;
+        left: 12%;
     }
 
    
