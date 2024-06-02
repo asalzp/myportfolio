@@ -241,11 +241,11 @@ ul{
     }
 
     .webdev-details li{
-        margin-bottom: -3rem;
+        margin-bottom: -4rem;
     }
 
     .languages-details li, .frameworks-details li{
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
     }
 
     .skills-details p{
@@ -253,9 +253,14 @@ ul{
     }
 
 
-    .webdev-details, .languages-details, .frameworks-details{
-        top: 77%;
+    .webdev-details{
+        top: 80%;
         left: 12%;
+    }
+
+    .languages-details, .frameworks-details{
+        top: 80%;
+        left: 15%;
     }
 
    
@@ -323,9 +328,14 @@ ul{
     }
 
 
-    .webdev-details, .languages-details, .frameworks-details{
+    .webdev-details{
         top: 70%;
         left: 12%;
+    }
+
+    .languages-details, .frameworks-details{
+        top: 71%;
+        left: 15%;
     }
 
    
