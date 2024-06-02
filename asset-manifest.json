@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.c8c6cf35.css",
+    "main.css": "/myportfolio/static/css/main.897c0d19.css",
     "main.js": "/myportfolio/static/js/main.01e9a0fc.js",
     "static/js/206.bf51703e.chunk.js": "/myportfolio/static/js/206.bf51703e.chunk.js",
     "static/media/bootstrap-icons.woff?": "/myportfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
@@ -8,7 +8,7 @@
     "index.html": "/myportfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.c8c6cf35.css",
+    "static/css/main.897c0d19.css",
     "static/js/main.01e9a0fc.js"
   ]
 }
