@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 html, body {
@@ -14,178 +14,101 @@ html, body {
 .section1-container {
   position: relative;
   padding: 0;
-  min-height: 100vh; /* Ensure Section1 covers the entire viewport */
+  min-height: 100vh;
   box-sizing: border-box;
+}
 
-  }
+/* Hexagon positioning - absolute left corner */
+.hexagon-container {
+  position: absolute;
+  top: 17%;
+  left: 0rem;
+  line-height: 0; /* Remove any line height spacing */
+  font-size: 0; /* Remove any font-based spacing */
+}
 
-.introduction{
+.hexagon-container img {
+  display: block; /* Remove default inline spacing */
+  width: 68%; 
+  height: auto;
+  padding: 0;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.introduction {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 20rem;
-  left: 20rem;
-  /* background-color: rgb(234, 0, 255); */
+  top: 25%;
+  left: 28%;
 }
 
-
-
-.my_name{
+.my_name {
   font-size: 60px;
   font-family: cursive;
   color: rgb(64, 64, 64);
   margin-bottom: 2rem;
 }
 
-.quote{
+.quote {
+  width: 350px;
   margin-top: 2rem;
+
 }
-.quote p{
+
+.quote p {
   font-size: 15px;
   font-style: italic;
 }
 
-.author{
+.author {
   font-size: 15px;
   position: absolute;
   left: 85%;
   width: 100%;
 }
 
-.quote_author p{
-  font-size: 15px;
-  font-style: italic;
-}
-  
-p{
+p {
   color: rgb(0, 0, 0);
   font-size: 30px;
-  font-family:monospace;
+  font-family: monospace;
 }
 
-.big_hexagon{
-  display: flex;
-  flex-direction: row;
+/* My pic positioning - right corner */
+.my_pic {
   position: absolute;
-  font-size: 900px;
-  margin-top: -13rem;
-  margin-left: 68rem;
-  transform: rotate(70deg);
+  top: 15%;
+  right: 3%; /* Position from right instead of left */
+  left: auto; /* Remove the left margin */
+  
 }
 
+.my_pic img {
+  border-radius: 3px;
+  width: 400px;
+}
 
-
-.my_pic{
+/* My pic background - below my pic */
+.my_pic_bg {
   position: absolute;
-  margin-left: 60rem;
-  margin-top: 10rem;
+  right: 5rem; /* Align with my_pic */
+  left: 5rem;
 }
 
-.my_pic2{
+.my_pic_bg img {
+  width: 550px; /* Match width of my_pic */
+}
+
+/* Hide my_pic2 by default, only show in mobile */
+.my_pic2 {
   display: none;
 }
 
-.my_pic img{
-  border-radius: 3px;
-  width: 550px;
-}
-
-
-
-.triple_hexagon_1{
-    position: absolute; /* Position absolutely within the container */
-    left: 0; /* Align to the left */
-    top: 30%; /* Align vertically to the middle */
-    transform: translateY(-100%); /* Center vertically */
-    width: 100px; /* Adjust the width as needed */
-    
-}
-
-.vertical-line {
-  border-left: 5px solid rgb(0, 0, 0); /* Adjust color and thickness as needed */
-  height: 60px; /* Adjust height as needed */
-  position: absolute; /* Position absolutely within the container */
-  left: 3.7rem; /* Align to the left */
-  top: -2rem;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(47, 46, 46);
-}
-
-.triple_hexagon_2{
-  position: absolute; /* Position absolutely within the container */
-    left: 0; /* Align to the left */
-    top: 61%; /* Align vertically to the middle */
-    transform: translateY(-100%); /* Center vertically */
-    width: 100px; /* Adjust the width as needed */
-}
-
-.vertical-line_2 {
-  border-left: 5px solid rgb(0, 0, 0); /* Adjust color and thickness as needed */
-  height: 52px; /* Adjust height as needed */
-  position: absolute; /* Position absolutely within the container */
-  left: 3.7rem; /* Align to the left */
-  bottom: 15rem;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(47, 46, 46);
-}
-
-.triple_hexagon_3{
-  position: absolute; /* Position absolutely within the container */
-  left: 5%; /* Align to the left */
-  top: 76%; /* Align vertically to the middle */
-  transform: translateY(-100%); /* Center vertically */
-  width: 100px; /* Adjust the width as needed */
-}
-
-.double_hexagon_1{
-  position: absolute; /* Position absolutely within the container */
-  left: 2.58%; /* Align to the left */
-  top: 76%; /* Align vertically to the middle */
-  transform: translateY(-100%); /* Center vertically */
-  width: 100px; /* Adjust the width as needed */
-}
-
-.double_hexagon_2{
-  position: absolute; /* Position absolutely within the container */
-  left: 4%; /* Align to the left */
-  top: 70%; /* Align vertically to the middle */
-  transform: translateY(-100%); /* Center vertically */
-  width: 100px; /* Adjust the width as needed */
-  transform: scaleX(-1);
-
-}
-
-.vertical-line_3{
-  border-left: 5px solid rgb(0, 0, 0); /* Adjust color and thickness as needed */
-  height: 85px; /* Adjust height as needed */
-  position: absolute; /* Position absolutely within the container */
-  left: 1rem; /* Align to the left */
-  top: 12.2rem;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(47, 46, 46);
-}
-
-.double_hexagon_3{
-  position: absolute; /* Position absolutely within the container */
-  left: 12%; /* Align to the left */
-  top: 70.5%; /* Align vertically to the middle */
-  transform: translateY(-100%); /* Center vertically */
-  width: 100px; /* Adjust the width as needed */
-  transform: scaleX(-1);
-}
-
-.double_hexagon_4{
-  position: absolute; /* Position absolutely within the container */
-  left: 17%; /* Align to the left */
-  top: 70.5%; /* Align vertically to the middle */
-  transform: translateY(-100%); /* Center vertically */
-  width: 100px; /* Adjust the width as needed */
-  transform: scaleX(-1);
-}
-
-@media (min-width: 381px) and (max-width: 768px){
-
+@media (min-width: 381px) and (max-width: 768px) {
   .introduction {
     min-height: 100vh;
     overflow-y: hidden;
@@ -195,13 +118,13 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
-    left: 60%; /* Move to the horizontal center */
+    align-items: center;
+    left: 60%;
     top: 65%;
-    transform: translate(-50%, -50%); /* Offset by half the element's size to truly center */
+    transform: translate(-50%, -50%);
   }
 
-  .my_name{
+  .my_name {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -210,17 +133,15 @@ p{
     font-size: 30px;
   }
 
-  .introduction p{
+  .introduction p {
     position: absolute;
     display: flex;
     top: 55%;
     left: 35%;
     transform: translate(-50%, -50%);
-
   }
 
-
-  .quote p{
+  .quote p {
     position: absolute;
     display: flex;
     top: 63%;
@@ -231,26 +152,29 @@ p{
     color: black;
   }
 
-
-  .author{
+  .author {
     position: absolute;
     display: flex;
-    top: 70% ;
+    top: 70%;
     left: 50%;
     width: 100%;
   }
-  
 
-
-  .big_hexagon{
-    display: none !important;
-    
+  .hexagon-container {
+    display: none;
   }
 
-  .my_pic2{
+  .my_pic {
+    display: none;
+  }
+  
+  .my_pic_bg {
+    display: none;
+  }
+
+  .my_pic2 {
     display: flex !important;
     position: absolute;
-    display: flex;
     left: 45%;
     top: 33%;
     width: 100%;
@@ -258,47 +182,31 @@ p{
     transform: translate(-50%, -50%);
   }
 
-  .my_pic{
-    display: none;
-  }
-  .my_pic2 img{
+  .my_pic2 img {
     width: 450px;
   }
-
-
-
-  /* Adjust other elements as needed */
-
-  .triple_hexagon_1,
-  .triple_hexagon_2,
-  .triple_hexagon_3,
-  .double_hexagon_1,
-  .double_hexagon_2,
-  .double_hexagon_3,
-  .double_hexagon_4 {
-    display: none; /* Hide the hexagon patterns on smaller screens */
-  }
-
 }
 
-@media (max-width: 380px){
-  html, body{
+@media (max-width: 380px) {
+  /* Mobile styles remain largely the same */
+  html, body {
     overflow-x: hidden;
     position: relative;
   }
+  
   .introduction {
     position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
-    left: 60%; /* Move to the horizontal center */
+    align-items: center;
+    left: 60%;
     top: 65%;
-    transform: translate(-50%, -50%); /* Offset by half the element's size to truly center */
+    transform: translate(-50%, -50%);
   }
 
-  .my_name{
+  .my_name {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -307,7 +215,7 @@ p{
     font-size: 30px;
   }
 
-  .introduction p{
+  .introduction p {
     position: absolute;
     display: flex;
     top: 100%;
@@ -316,8 +224,7 @@ p{
     transform: translate(-50%, -50%);
   }
 
-
-  .quote p{
+  .quote p {
     position: absolute;
     display: flex;
     top: 100%;
@@ -328,52 +235,37 @@ p{
     transform: translate(-50%, -50%);
   }
 
-  .author{
+  .author {
     position: absolute;
     display: flex;
-    margin-top: 5rem ;
+    margin-top: 5rem;
     left: 50%;
     width: 100%;
   }
+
+  .hexagon-container {
+    display: none;
+  }
+
+  .my_pic {
+    display: none;
+  }
   
-
-
-  .big_hexagon{
+  .my_pic_bg {
     display: none;
   }
 
-  .my_pic{
-    display: none;
-  }
-  .my_pic2{
+  .my_pic2 {
     display: flex !important;
     position: absolute;
-    display: flex;
     left: 45%;
     top: 33%;
     width: 100%;
     margin: 0;
     transform: translate(-50%, -50%);
   }
-  .my_pic2 img{
+  
+  .my_pic2 img {
     width: 400px;
   }
-
-
-
-  /* Adjust other elements as needed */
-
-  .triple_hexagon_1,
-  .triple_hexagon_2,
-  .triple_hexagon_3,
-  .double_hexagon_1,
-  .double_hexagon_2,
-  .double_hexagon_3,
-  .double_hexagon_4 {
-    display: none; /* Hide the hexagon patterns on smaller screens */
-  }
-
-
 }
-
-

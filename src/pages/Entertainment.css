@@ -4,178 +4,133 @@
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
   }
   
-html, body {
+  html, body {
     height: 100%;
     background-color: #e4e2e2;
     max-width: 100%;
-}
+  }
   
-.section-container {
+  .section-container {
     position: relative;
     padding: 0;
     min-height: 100vh; /* Ensure Section1 covers the entire viewport */
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-}
-
-.page_title{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 25%;
+  .page_title {
+    width: 100%;
+    text-align: center;
     padding-top: 8rem;
-}
-
-.page_info{
+  }
+  
+  .page_info {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  .images {
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    left: 25%;
-    top: 17%;
-    padding-top: 2rem;
-}
-
-p{
-    font-size: 20px;
-}
-
-.images {
-    position: absolute;
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    margin-left: 15rem;
-    margin-top: 20rem;
-    
-}
-
-.music_img{
-    position: absolute;
-    margin-left: 80rem;
-}
-
-.music_img img, .movies_img img{
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+  }
+  
+  .movies_img, .music_img {
+    position: relative;
     width: 500px;
+    max-width: 45%;
+  }
+  
+  .movies_img img, .music_img img {
+    width: 100%;
     border-radius: 20px;
     transition: opacity 0.3s ease;
-    
-}
-
-.neon-border {
+  }
+  
+  .neon-border {
     animation: flicker 1s infinite alternate; /* Flickering animation */
     border-radius: 22px; /* Adjust border radius as needed */
-}
-
-@keyframes flicker {
+  }
+  
+  @keyframes flicker {
     0% {
-        border-color: #fff;
-        box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+      border-color: #fff;
+      box-shadow: 0 0 20px #fff, 0 0 40px #fff;
     }
     50% {
-        border-color: #000;
-        box-shadow: 0 0 20px #000;
+      border-color: #000;
+      box-shadow: 0 0 20px #000;
     }
     100% {
-        border-color: #fff;
-        box-shadow: 0 0 20px #fff;
+      border-color: #fff;
+      box-shadow: 0 0 20px #fff;
     }
-    
-    
-      
-}
-
-.neon-border:hover {
+  }
+  
+  .neon-border:hover {
     animation: none; /* Stops the animation on hover */
     cursor: pointer;
-}
-
-.text-movies, .text-music{
+  }
+  
+  .text-movies, .text-music {
     position: absolute;
     color: white;
     font-family: monospace;
     font-size: 20px;
     top: 12%;
     left: 10%;
-}
-
-.text-music{
-    left: 8%;
-}
-
-.text-movies p{
+    text-align: center;
+    width: 80%;
+  }
+  
+  .text-music {
+    left: 10%;
+  }
+  
+  .text-movies p {
     color: white;
-}
-
-
-@media screen and (max-width: 768px){
-    .page_title{
-        position: absolute;
-        text-align: center;
-        display: flex;
-        top: -7%;
-        left: 3%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page_title {
+      padding-top: 4rem;
     }
-
-    .page_title h1{
-        font-size: 20px;
+  
+    .page_title h1 {
+      font-size: 20px;
     }
-
-    .page_info{
-        position: absolute;
-        text-align: center;
-        display: flex;
-        top: 17%;
-        left: 1%;
-        width: 100%;
+  
+    .page_info p {
+      width: 80%;
+      font-size: 15px;
+      margin: 0 auto;
     }
-
-    .page_info p{
-        width: 80%;
-        font-size: 15px;
+  
+    .images {
+      flex-direction: column;
+      gap: 30px;
     }
-
-    .images{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 50px;
+  
+    .movies_img, .music_img {
+      width: 200px;
+      max-width: 90%;
+      margin: 0 auto;
     }
-
-    .music_img img, .movies_img img{
-        width: 200px;
+  
+    .text-movies, .text-music {
+      font-size: 15px;
     }
-
-    .movies_img{
-        position: absolute;
-        display: flex;
-        margin-top: 2rem;
-        margin-left: -9rem;
-    }
-
-    .music_img{
-        position: absolute;
-        display: flex;
-        margin-left: -9rem;
-        margin-top: 30rem;
-    }
-
-    .text-movies{
-        text-align: center;
-        width: 90%;
-        margin-left: -1rem;
-        margin-top: -1rem;
-    }
-
-    .text-movies p{
-        font-size: 15px;
-    }
-
-    .text-music{
-        text-align: center;
-        font-size: 15px;
-        margin-left: -1rem;
-        margin-top: -0.5rem;
-    }
-}
+  }

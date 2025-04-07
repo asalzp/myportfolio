@@ -1,6 +1,5 @@
-// SecondPage.js
 import React, { useState } from "react";
-import "./About.css"; // Importing the corresponding CSS file
+import "./About.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function About() {
@@ -36,7 +35,7 @@ function About() {
                 onMouseEnter={() => handleHover("webdev")}
                 onMouseLeave={handleHoverOut}
                 type="button"
-                class="btn btn-rect-to-round btn-rect-to-round--black"
+                className="btn btn-rect-to-round btn-rect-to-round--black"
               >
                 Web Development
               </button>
@@ -46,7 +45,7 @@ function About() {
                 onMouseEnter={() => handleHover("languages")}
                 onMouseLeave={handleHoverOut}
                 type="button"
-                class="btn btn-rect-to-round btn-rect-to-round--black"
+                className="btn btn-rect-to-round btn-rect-to-round--black"
               >
                 Programming Languages
               </button>
@@ -56,7 +55,7 @@ function About() {
                 onMouseEnter={() => handleHover("frameworks")}
                 onMouseLeave={handleHoverOut}
                 type="button"
-                class="btn btn-rect-to-round btn-rect-to-round--black"
+                className="btn btn-rect-to-round btn-rect-to-round--black"
               >
                 Frameworks and Tools
               </button>
@@ -64,6 +63,7 @@ function About() {
           </ul>
         </div>
       </div>
+      
       <div className="skills-details">
         <div
           className={`webdev-details ${
@@ -146,43 +146,6 @@ function About() {
           </ul>
         </div>
       </div>
-
-      {/* <div className='likes'>
-        <h1>I like</h1>
-
-        <div className='likes-items'>
-            <ul>
-              <li>
-              <button onMouseEnter={() => handleHover('guitar')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Playing the guitar</button>
-              </li>
-              <li>
-              <button onMouseEnter={() => handleHover('books')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Reading books</button>
-              </li>
-              <li>
-              <button onMouseEnter={() => handleHover('baking')}
-                      onMouseLeave={handleHoverOut}
-                      type="button" class="btn btn-rect-to-round btn-rect-to-round--black">Baking</button>
-              </li>
-            </ul>
-        </div>
-      </div>
-
-      <div className='likes_images'>
-        <div className={`guitar_img ${hoveredButton === 'guitar' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/guitar.jpg' alt='guitar'></img>
-        </div>
-        <div className={`books_img ${hoveredButton === 'books' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/books.jpg' alt='books'></img>
-        </div>
-        <div className={`baking_img ${hoveredButton === 'baking' ? 'heartbeat' : 'hidden'}`}>
-          <img src='images/baking.jpg' alt='baking'></img>
-        </div>
-
-      </div> */}
     </div>
   );
 }

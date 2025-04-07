@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-  }
+    box-sizing: border-box;
+}
   
 html, body {
     height: 100%;
@@ -11,71 +11,71 @@ html, body {
   
 .section-container {
     position: relative;
-    padding: 0;
-    min-height: 100vh; /* Ensure Section1 covers the entire viewport */
-    box-sizing: border-box;
-  
-}
-
-.contact-title{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 42%;
-    padding-top: 15rem;
-}
-
-.contact-items{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7rem;
-    left: 40%;
-    top: 30%;
-}
-
-.contact-items ul{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
-li{
-    
+.contact-title {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-items ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+li {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.contact-items a{
+.contact-items a {
     font-size: 20px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
     color: black;
-    margin-left: 0.8rem
+    margin-left: 0.8rem;
+    transition: color 0.3s ease;
 }
 
-.contact-items a:hover{
+.contact-items a:hover {
     color: grey;
 }
 
-.email, .linkedin, .github{
+.email, .linkedin, .github {
     color: black;
+    font-size: 20px;
 }
 
-
 @media screen and (max-width: 768px) {
-
-    .contact-title{
-        position: absolute;
-        display: flex;
-        top: -12%;
-        left: 30%;
+    .contact-title h1 {
+        font-size: 24px;
     }
     
-    .contact-items{
-        position: absolute;
-        display: flex;
-        top: 20%;
-        left: 17%;
+    .contact-items a {
+        font-size: 18px;
+    }
+    
+    .email, .linkedin, .github {
+        font-size: 18px;
     }
 }

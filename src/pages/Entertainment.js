@@ -1,5 +1,7 @@
 import React from "react";
 import "./Entertainment.css";
+import movies from '../images/movies.jpg';
+import music from '../images/music.jpg';
 
 function Entertainment() {
   const openSpotify = () => {
@@ -10,7 +12,6 @@ function Entertainment() {
   };
 
   const openMovies = () => {
-    // Reload the page
     window.open("https://www.imdb.com/user/ur136260470/watchlist", "_blank");
   };
 
@@ -24,18 +25,16 @@ function Entertainment() {
           {`Here there are some fun stuff you might want to take a look at :)`}{" "}
         </p>
       </div>
-      <div className="images neon-border">
-
+      <div className="images">
         <div className="movies_img neon-border" onClick={openMovies}>
-          <img src="images/movies.jpg" alt="movies"></img>
+          <img src={movies} alt="movies"></img>
           <div className="text-movies"><p>Top 10 Movies Everyone Should Watch</p></div>
         </div>
       
         <div className="music_img neon-border" onClick={openSpotify}>
-          <img src="images/music.jpg" alt="music"></img>
-          <div class="text-music">Spotify Playlist for House Music Lovers</div>
+          <img src={music} alt="music"></img>
+          <div className="text-music">Spotify Playlist for House Music Lovers</div>
         </div>
-
       </div>
     </div>
   );
