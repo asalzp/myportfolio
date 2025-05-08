@@ -69,13 +69,38 @@ li {
 @media screen and (max-width: 768px) {
     .contact-title h1 {
         font-size: 24px;
+        text-align: center;
+    }
+    
+    .contact-items {
+        text-align: center;
+        margin-left: -5rem;
+    }
+    
+    .contact-items ul {
+        align-items: center;
+
+    }
+    
+    li {
+        justify-content: center;
+        text-align: center;
     }
     
     .contact-items a {
         font-size: 18px;
+        text-align: center;
     }
     
     .email, .linkedin, .github {
         font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

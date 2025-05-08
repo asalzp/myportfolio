@@ -39,6 +39,15 @@ function Project() {
     ).start();
   }, []);
 
+  useEffect(() => {
+    const tween = KUTE.fromTo(
+      "#blob1-fifth",
+      { path: "#blob1-fifth" },
+      { path: "#blob2-fifth" },
+      { repeat: 999, duration: 1500, yoyo: true }
+    ).start();
+  }, []);
+
   const openGame = () => {
     window.open('https://asalzp.github.io/slide.html', '_blank')
   }
@@ -53,6 +62,10 @@ function Project() {
 
   const openMalefiz = () => {
     window.open('https://github.com/asalzp/Projects-Done/tree/main/Malefiz%20Game%20Project', '_blank')
+  }
+
+  const openExpenseEase = () => {
+    window.open('https://youtu.be/OK8JdSawvtE', '_blank')
   }
 
   useEffect(() => {
@@ -246,6 +259,48 @@ function Project() {
             >
               <tspan x="280.24" y="280.109" style={{ filter: "none" }}>
                 Malefiz Game
+              </tspan>
+            </text>
+          </svg>
+        </div>
+        
+        <div className="fifth-blob">
+          <svg
+            id="visual"
+            viewBox="0 0 900 600"
+            width="800"
+            height="500"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs />
+            
+            <g transform="translate(414.8630586732182 307.1500272025332)" >
+              <path onClick={openExpenseEase}  className="blob_itself2"
+               id="blob1-fifth"
+                d="M190.9 -168.4C240.4 -141.4 268.7 -70.7 258.2 -10.5C247.7 49.7 198.5 99.5 149 130.5C99.5 161.5 49.7 173.7 7.2 166.5C-35.4 159.4 -70.7 132.7 -108.4 101.7C-146 70.7 -186 35.4 -189.8 -3.8C-193.6 -42.9 -161.1 -85.8 -123.5 -112.8C-85.8 -139.8 -42.9 -150.9 13.9 -164.8C70.7 -178.7 141.4 -195.4 190.9 -168.4"
+                fill="#303030"
+              />
+            </g>
+            <g transform="translate(491.9400486868151 297.3234330424008)" style={{visibility:"hidden"}}>
+              <path
+              
+              onClick={openExpenseEase} 
+                id="blob2-fifth"
+                d="M149.9 -164.4C174.9 -124.9 162.5 -62.5 151.5 -11C140.5 40.5 131.1 81.1 106.1 125.7C81.1 170.4 40.5 219.2 -2.1 221.3C-44.8 223.5 -89.6 178.9 -139.6 134.2C-189.6 89.6 -244.8 44.8 -248.2 -3.4C-251.6 -51.6 -203.2 -103.2 -153.2 -142.7C-103.2 -182.2 -51.6 -209.6 5.4 -215C62.5 -220.5 124.9 -203.9 149.9 -164.4"
+                fill="#303030"
+              />
+            </g>
+            <text 
+              style={{
+                fontFamily: "monospace",
+                fontSize: "28px",
+                whiteSpace: "pre",
+                fill: "#e4e2e2"
+              }}
+            >
+              <tspan x="280.24" y="280.109" style={{ filter: "none" }}>
+                ExpenseEase
               </tspan>
             </text>
           </svg>

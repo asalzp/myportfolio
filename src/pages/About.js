@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./About.css";
+import "./About.css"; // Importing the corresponding CSS file
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function About() {
@@ -63,8 +63,8 @@ function About() {
           </ul>
         </div>
       </div>
-      
-      <div className="skills-details">
+
+      <div className="skills-items">
         <div
           className={`webdev-details ${
             hoveredButton === "webdev" ? "heartbeat" : "hidden"
